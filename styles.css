@@ -1,0 +1,271 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  /* margin-top: -2px; */
+}
+
+.container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0px;
+  position: relative; /* Add this line */
+  z-index: 2; /* Increase the z-index value */
+  /* background-color: black; */
+}
+
+.heading {
+  text-align: left;
+  margin-bottom: 20px;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  padding: 7px 10px;
+  margin: 0 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.date-container,
+.time-container {
+  display: flex;
+  align-items: center;
+  font-family: Open Sans, Bold;
+}
+
+.date-container img,
+.time-container img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.date-input,
+.time-input {
+  border: none;
+  padding: 1px;
+  font-size: 16px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: white;
+  position: relative; /* Add this line */
+  z-index: 1; /* Lower z-index value */
+  margin-top: -20px; /* Adjust this value as per your desired spacing */
+}
+
+.slide-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 130px;
+  height: auto;
+  background-color: white;
+  margin-top: 29%;
+  color: gray;
+  border: 2px solid gray;
+  margin-right: 10px;
+  font-weight: bold;
+  font-family: Open Sans;
+}
+
+.slide-btn:hover {
+  color: orange;
+  border: 2px solid orange;
+}
+
+@media (max-width: 768px) {
+  .container1 {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .button-container {
+    display: inline-block;
+    float: none;
+  }
+}
+
+
+
+.container2 {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  background-color: white;
+  position: relative;
+  z-index: 1; 
+  padding-top: 30px;
+}
+.container2 p{
+  text-align: left;
+  font: normal normal bold 24px Open Sans;
+  letter-spacing: 0.14px;
+  color: #1C1C1C;
+  margin-left: 30px;
+  opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .container2 p {
+    font-size: 17px; 
+  }
+}
+
+.background1{
+  background-color: white;
+  color: black;
+}
+
+.token-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+}
+
+.token {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+
+  text-align: left;
+  font: normal normal 600 15px Open Sans;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  background: #1C1C1C9A 0% 0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+}
+
+@media (max-width: 768px) {
+  .token {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .token-container {
+    display: inline-block;
+    float: none;
+  }
+}
+
+
+.popular-dish {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  position: relative;
+
+}
+
+.popular-dish-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  mix-blend-mode: multiply;
+  border: 2px solid #FF941A; 
+  padding: 10px; 
+}
+
+.popular-dish-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-content: center;
+  background: #1C1C1C9A;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%; 
+  font-weight: bold;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.dish-details {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.image-container {
+  flex: 0 0 200px;
+  margin-right: 20px;
+}
+
+.dish-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.details-container {
+  flex: 1;
+}
+
+.dish-name {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.rating-container {
+  margin-bottom: 10px;
+}
+
+.rating {
+  font: normal normal 600 20px Open Sans bold;
+  color: #FFFFFF;
+  background-color: rgb(23, 189, 23);
+}
+
+.ingredients {
+  margin-bottom: 10px;
+}
+
+.description {
+  margin-bottom: 10px;
+}
+
+.add-btn {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 20px; /* Adjust the width as desired */
+  height: 32px; /* Adjust the height as desired */
+  margin:0 2.5%; /* Add some spacing between the icons */
+}
+.icon-container{
+  display: inline-block;
+}
